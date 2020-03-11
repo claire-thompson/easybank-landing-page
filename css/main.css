@@ -1,17 +1,98 @@
 /******** General Styles ********/
 
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    color: hsl(233, 8%, 62%);
+}
+
+button {
+    padding: 17px 45px;
+    border: 0;
+    border-radius: 22px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    color: #FFF;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Header */
 
-/* Hero Area */
+/* About */
+
+aside {
+    background-image: url("../images/image-mockups.png"), url("../images/bg-intro-mobile.svg");
+    background-size: 86%, cover;
+    background-repeat: no-repeat;
+    background-position: bottom center, center;
+    height: 300px;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 86%;
+}
 
 /* Features */
 
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 86%;
+}
+
 /* Latest Articles */
+
+.latest-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-articles img {
+    width: 86%;
+}
+
+.article-description {
+    width: 77%;
+}
 
 /* Footer */
 
+footer {
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+footer nav ul li {
+    color: #FFF;
+}
 
 
 
 /******** Media Queries ********/
+
