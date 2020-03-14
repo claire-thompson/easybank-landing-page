@@ -28,6 +28,38 @@ main {
 
 /* Header */
 
+.topnav {
+    overflow: hidden;
+    background-color: #FFF;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    text-align: center;
+    position: fixed;
+    background-color: #FFF;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .topnav a {
+    color: hsl(233, 26%, 24%);
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .topnav .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 /* About */
 
 aside {

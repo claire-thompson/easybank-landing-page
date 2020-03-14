@@ -11,6 +11,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+
   <title>Frontend Mentor | Easybank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,23 +26,22 @@
 
   <header>
 
-    <img src="images/logo.svg" alt="easybank logo">
-
-    <nav class="topnav">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Careers</li>
-      </ul>
-    </nav>
-
-    <div class="button">
-      <button>Request Invite</button>
+    <div class="topnav">
+      <a href="#home"><img src="images/logo.svg" alt="easybank logo" class="logo"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+        <a href="#careers">Careers</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" id="icon"></i>
+      </a>
     </div>
     
-
   </header>
 
   <!-------------------------------------------->
@@ -47,7 +49,7 @@
   <main>
 
     
-      <aside class="mockups"></aside>
+      <aside class="mockups" id="mockups"></aside>
       <section class="about">
         <h1>Next generation digital banking</h1>
         <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
@@ -186,4 +188,5 @@
   
   
 </body>
+
 </html>
