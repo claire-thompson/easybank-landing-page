@@ -4,10 +4,12 @@ body {
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
     color: hsl(233, 8%, 62%);
+    margin: 0;
 }
 
 main {
     position: relative;
+    width: 100%;
 }
 
 button {
@@ -16,6 +18,12 @@ button {
     border-radius: 22px;
     background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     color: #FFF;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
 }
 
 .button {
@@ -39,7 +47,7 @@ main {
     align-items: flex-start;
     width: 100%;
     position: relative;
-    height: 50px;
+    height: 60px;
   }
 
   .topnav .logo {
@@ -47,7 +55,7 @@ main {
       display: block;
       top: 0;
       left: 0;
-      padding: 14px 16px
+      padding: 18px;
   }
   
   .topnav #myLinks {
@@ -66,7 +74,7 @@ main {
 
   .topnav a {
     color: hsl(233, 26%, 24%);
-    padding: 14px 16px;
+    padding: 18px 20px;
     text-decoration: none;
     display: block;
   }
@@ -84,25 +92,28 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 aside {
     background-image: url("../images/bg-intro-mobile.svg");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top center;
-    height: 300px;
+    background-position: center;
+    height: 285px;
     width: 100%;
     position: relative;
     overflow: hidden;
     z-index: -1;
+    display: flex;
+    justify-content: center;
 }
 
 aside img {
-    width: 100%;
+    width: 90%;
     position: absolute;
     overflow: hidden;
-    top: -127px;
+    top: -120px;
     visibility: visible;
     background-image: none;
 }
@@ -114,6 +125,21 @@ aside img {
     text-align: center;
     width: 86%;
     position: relative;
+    margin-bottom: 85px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: hsl(233, 26%, 24%);
+    margin: 40px 0 20px 0;
+}
+
+.about p {
+    font-size: 0.75em;
+    width: 90%;
+    margin: 0 0 35px 0;
+    line-height: 23px;
 }
 
 /* Features */
@@ -123,9 +149,38 @@ aside img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+    background: hsl(220, 16%, 96%);
+    padding-bottom: 30px;
+}
+
+.features h2 {
     width: 86%;
-    position: relative;
-    top: 30px;
+    margin: 70px 0 20px 0;
+}
+
+.features p {
+    width: 86%;
+    margin: 0;
+    font-size: 0.75em;
+    line-height: 23px;
+    margin-bottom: 60px;
+}
+
+.features-items article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-items h3 {
+    margin: 30px 0 0 0;
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+}
+
+.features-items p {
+    margin: 25px 0 40px 0;
 }
 
 /* Latest Articles */
@@ -134,20 +189,48 @@ aside img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 90px 0 74px 0;
+    background: hsl(0, 0%, 98%);
+}
+
+.latest-articles h2 {
+    margin: 0 0 28px 0;
 }
 
 .latest-articles article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 86%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #FFF;
+    margin: 12px 0;
+    padding-bottom: 30px;
 }
 
 .latest-articles img {
-    width: 86%;
+    width: 100%;
 }
 
 .article-description {
-    width: 77%;
+    width: 85%;
+}
+
+.article-description p {
+    font-size: 0.7em;
+    margin: 15px 0 15px 0;
+}
+
+.article-description h4 {
+    margin: 15px 0;
+    color: hsl(233, 26%, 24%);
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+p.byline {
+    font-size: 0.6em;
 }
 
 /* Footer */
@@ -159,8 +242,39 @@ footer {
     align-items: center;
 }
 
+.footer-logo {
+    margin: 40px 0 30px 0;
+}
+
+.social-icons img {
+    padding: 0 7.5px;
+}
+
+.footer-nav {
+    padding: 26px 0 0 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 footer nav ul li {
     color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+footer .button {
+    padding: 26px 0 30px 0;
+}
+
+.copyright p {
+    margin: 0 0 45px 0;
+    font-size: 0.8em;
 }
 
 
