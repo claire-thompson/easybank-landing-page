@@ -86,9 +86,13 @@ main {
     right: 0;
   }
 
+  .topnav .button {
+      display: none;
+  }
+
 /* About */
 
-#gradient {
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,9 +116,7 @@ aside {
 aside img {
     width: 90%;
     position: absolute;
-    overflow: hidden;
     top: -120px;
-    visibility: visible;
     background-image: none;
 }
 
@@ -281,3 +283,98 @@ footer .button {
 
 /******** Media Queries ********/
 
+
+@media screen and (min-width: 1440px) {
+
+/*************** Desktop Styles ****************/
+
+
+/* Header */
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+
+.topnav {
+    background-color: #FFF;
+    width: 77%;
+    position: relative;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.topnav .logo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 18px;
+}
+  
+.topnav #myLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #FFF;
+    position: relative;
+    top: 0;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav .button {
+    display: flex;
+}
+
+/* About */
+
+#about {
+    height: 660px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mockups,
+.about {
+    height: 100%;
+}
+
+.about {
+    text-align: justify;
+    margin: 0;
+    min-width: 0;
+}
+
+aside {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0% 70%;
+    overflow: visible;
+}
+
+aside img {
+    bottom: -90px;
+    left: 200px;
+}
+
+/* Features */
+
+.features {
+    z-index: -2;
+}
+
+}

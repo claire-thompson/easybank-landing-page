@@ -3,7 +3,7 @@ function myFunction() {
     var z = document.getElementById("mockups");
     var y = document.getElementById("icon");
     var x = document.getElementById("myLinks");
-    var a = document.getElementById("gradient")
+    var a = document.getElementById("about")
     if (x.style.display === "flex") {
       x.style.display = "none";
       y.className = "fa fa-bars";
